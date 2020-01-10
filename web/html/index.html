@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Projet Conan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="../css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(../images/conan.gif);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Projet Conan</a></h1>
+				<span class="position"><a href="#">M2 TAL</a> Documents structurés</span>
+				<span class="position link"><a href="https://github.com/lili-wu/ProjetM2_DocStruc" target=_blank>Github</a> </span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">A propos</a></li>
+						<li><a href="#" data-nav-section="stats">Stats</a></li>
+						<li><a href="#" data-nav-section="analyses">Analyses</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="colorlib-footer">
+				<audio controls autoplay loop id="myaudio">
+					<source src="../audio/Det_Conan_Sound1.mp3" type="audio/mpeg">
+				</audio>
+				
+                <script>
+                    var audio = document.getElementById("myaudio");
+                    audio.volume = 0.05;
+                </script>
+                <p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small>
+                </p>
+			</div>
+		</aside>
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(../images/conan1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Bienvenue! <br>Voici le Projet Conan</br></h1>
+						   					<h2>Produit pour le cours de Documents Structurés</h2>
+								        </div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(../images/conan2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">A propos de nous</span>
+										<h2 class="colorlib-heading">Qu'est-ce que le projet Conan?</h2>
+										<script>
+											var xhr= new XMLHttpRequest();
+											xhr.open('GET', 'resultat.html', true);
+											xhr.onreadystatechange= function() {
+												if (this.readyState!==4) return;
+												if (this.status!==200) return;
+												document.getElementById('container').innerHTML= this.responseText;
+											};
+											xhr.send();
+										</script>
+										<div id="container"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="stats">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Stats</span>
+							<h2 class="colorlib-heading animate-box">Graphes</h2>
+						</div>
+					</div>
+                    
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(../images/graph-1.png);">
+								<div class="desc">
+									<div class="con">
+										<h3>Graphe 01</h3>
+										<span>Thèmes</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(../images/graph-2.png);">
+								<div class="desc">
+									<div class="con">
+										<h3>Graphe 02</h3>
+										<span>Victimes</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(../images/graph-3.png);">
+								<div class="desc">
+									<div class="con">
+										<h3>Graphe 03</h3>
+										<span>Deceased</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+            
+            <section class="colorlib-experience" data-section="analyses">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Analyses</span>
+							<h2 class="colorlib-heading animate-box">Graphes</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2>Graphe 01 <span>Thèmes</span></h2>
+					                  <p>13% des chapitres font partie de la trame principale! Cela fait beaucoup d’affaires mineures… Le thème de chapitre le plus représenté est le thème “New Character”. C’est en effet normal, car quand l’on voit le nombre de personnages introduits dans chacun des chapitres… </p>
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Graphe 02 <span>Victimes</span></h2>
+					                  <p>La majorité des personnes ont été tuées en étant poignardées ou empoisonnées, ces deux morts sont ex-aequo avec 35 personnes concernées dans chaque catégorie. Suit ensuite la mort provoquée par étranglement. Il est très intéressant d’obtenir ces résultats: en effet, il y a beaucoup de personnes mortes dans l’oeuvre, et nous nous étions toujours demandées quelle “manière de tuer” était le plus utilisée par les tueurs dans Détective Conan. </p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Graphe 03 <span>Deceased</span></h2>
+					                  <p> Le graphe reprend les personnes nommées comme “deceased” dans notre base de données, contrairement aux personnes du graphe n°2, qui sont elles des “victims”. Les “victims” sont les personnes mortes durant les enquêtes, ou qui ont fait que l’enquête ait commencé. Tandis que les “deceased” représentent des personnes déjà mortes avant le début de l’enquête. Nous pouvons déjà constater qu’il y a beaucoup moins de personnes dans ce graphe, et la cause principale de la mort est la pendaison, avec 11 personnes concernées. La deuxième cause est la chute, avec 8 personnes, et la troisième cause est la maladie avec 6 personnes.<br/>
+                                      On peut donc constater que les personnes “deceased” sont décédées de cause “naturelle” dans le cas de la maladie, de cause accidentelle avec la chute, et en se suicidant (pendaison). Cela montre un fort contraste avec les personnes “victims”, où les causes de mort sont plus violentes: nous avons des causes comme “matraquée”, ou “noyée”, ce qui donne une image de morts extrêmement brutales.</p>
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="../js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="../js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="../js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>
+

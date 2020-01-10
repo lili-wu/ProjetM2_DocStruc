@@ -1,0 +1,5 @@
+Nous avons écrit le fichier de validation Relax Ng nous-mêmes au fur et à mesure de l'élaboration de notre fichier de données XML. 
+
+Le fichier de validation DTD a lui été généré par Oxygen, nous nous sommes évidemment assurées de la validation du fichier xml par celui ci avant de l'intégrer à notre projet.
+
+Nous avons choisi de faire de manière différente nos fichiers de grammaires afin d'observer la différence entre celui que nous écrivons, et celui généré. De plus, nous venions juste d'étudier la grammaire Relax Ng en cours, nous avons donc préféré nous exercer à son écriture pendant ce projet.

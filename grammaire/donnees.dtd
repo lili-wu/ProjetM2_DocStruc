@@ -1,0 +1,88 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT root (volume)+>
+    <!ATTLIST root
+      xmlns CDATA #FIXED ''>
+
+    <!ELEMENT volume (cover_url,chapters,summary,summary_plot,characters?,
+                  casualties?)>
+        <!ATTLIST volume
+          xmlns CDATA #FIXED ''
+          n CDATA #REQUIRED>
+
+        <!ELEMENT cover_url (#PCDATA)>
+            <!ATTLIST cover_url
+              xmlns CDATA #FIXED ''>
+
+        <!ELEMENT chapters (chapter)+>
+            <!ATTLIST chapters
+              xmlns CDATA #FIXED ''>
+              
+            <!ELEMENT chapter (title,events?)>
+                <!ATTLIST chapter
+                  xmlns CDATA #FIXED ''>
+                
+                <!ELEMENT title (#PCDATA)>
+                    <!ATTLIST title
+                      xmlns CDATA #FIXED ''>
+                
+                <!ELEMENT events (#PCDATA)>
+                    <!ATTLIST events
+                      xmlns CDATA #FIXED ''>
+
+        <!ELEMENT summary (#PCDATA)>
+            <!ATTLIST summary
+              xmlns CDATA #FIXED ''>
+        
+        <!ELEMENT summary_plot (event)*>
+            <!ATTLIST summary_plot
+              xmlns CDATA #FIXED ''>
+              
+            <!ELEMENT event (#PCDATA)>
+                <!ATTLIST event
+                  xmlns CDATA #FIXED ''
+                  genre CDATA #REQUIRED>
+        
+        <!ELEMENT characters (character)+>
+            <!ATTLIST characters
+              xmlns CDATA #FIXED ''>
+            
+            <!ELEMENT character (name,informations,image_url)>
+                <!ATTLIST character
+                  xmlns CDATA #FIXED ''>
+                  
+        <!ELEMENT casualties (victims,deceased?)>
+            <!ATTLIST casualties
+              xmlns CDATA #FIXED ''>
+        
+            <!ELEMENT victims (victim)+>
+                <!ATTLIST victims
+                  xmlns CDATA #FIXED ''>
+                
+                <!ELEMENT victim (name,informations,image_url)>
+                    <!ATTLIST victim
+                      xmlns CDATA #FIXED ''>
+
+            <!ELEMENT deceased (dead)+>
+                <!ATTLIST deceased
+                  xmlns CDATA #FIXED ''>
+                
+                <!ELEMENT dead (name,informations,image_url)>
+                    <!ATTLIST dead
+                      xmlns CDATA #FIXED ''>
+                    
+                    <!ELEMENT name (#PCDATA)>
+                        <!ATTLIST name
+                          xmlns CDATA #FIXED ''>
+                
+                    <!ELEMENT informations (#PCDATA)>
+                        <!ATTLIST informations
+                          xmlns CDATA #FIXED ''>
+            
+                    <!ELEMENT image_url (#PCDATA)>
+                        <!ATTLIST image_url
+                          xmlns CDATA #FIXED ''>
+
+        
+        
+        

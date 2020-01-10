@@ -1,0 +1,3 @@
+Nous avons écrit un script python pour extraire les données qui nous intéressaient sur le site detectiveconanworld.com, puis on les a directement transformés en format XML et les avons combinés dans un seul fichier (disponible dans les dossiers XML et xml).
+
+Nous avons hiérarchisé les informations par volume (numéro, image de couverture, chapitres (titres et evenements), résumés, personnages, victimes et morts).

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<element name ="root" xmlns="http://relaxng.org/ns/structure/1.0">
+    <oneOrMore>
+        <element name="volume">
+            <attribute name="n"/>
+            <element name="cover_url">
+                <text/>
+            </element>
+            <element name="chapters">
+                <oneOrMore>
+                    <element name="chapter">
+                        <element name="title"><text/></element>
+                        <optional>
+                            <element name="events"><text/></element>
+                        </optional>
+                    </element>
+                </oneOrMore>
+            </element>
+            <element name="summary"><text/></element>
+            <element name="summary_plot">
+                <optional>
+                    <oneOrMore>
+                        <element name="event">
+                            <attribute name="genre"/>
+                            <text/>
+                        </element>
+                    </oneOrMore>
+                </optional>
+            </element>
+            <optional>
+                <element name="characters">
+                    <oneOrMore>
+                        <element name="character">
+                            <element name="name"><text/></element>
+                            <element name="informations"><text/></element>
+                            <element name="image_url"><text/></element>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </optional>
+            <optional>
+                <element name="casualties">
+                    <optional>
+                        <element name="victims">
+                            <oneOrMore>
+                                <element name="victim">
+                                    <element name="name"><text/></element>
+                                    <element name="informations"><text/></element>
+                                    <element name="image_url"><text/></element>
+                                </element>
+                            </oneOrMore>
+                        </element>
+                    </optional>   
+                    <optional>
+                        <element name="deceased">
+                            <oneOrMore>
+                                <element name="dead">
+                                    <element name="name"><text/></element>
+                                    <element name="informations"><text/></element>
+                                    <element name="image_url"><text/></element>
+                                </element>
+                            </oneOrMore>
+                        </element>
+                    </optional>
+                </element>
+            </optional>
+        </element>
+    </oneOrMore>
+</element>
